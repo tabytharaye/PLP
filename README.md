@@ -36,3 +36,11 @@ Other important notes and examples on the data type topic:
  - Ex: x = "5" + 6 will give us an error, but you can concatenate the string "5" to the int, but you must convert the int to a string first using the to_string() method
 
 There are not many limitations when it comes to data types in C++. Moreover, there are nunces to consider like the ones we covered above. 
+
+## Control Statements
+The boolean values in C++ are true and false, 0 and 1. 
+
+Conditional statements consist of if/else if/ else. If you are familiar with Python, note that you cannot use elif in C++, you need to use else if. 
+C++ does utilize short-circuit logic (see plp code for examples). 
+Dangling else?
+You can also make use of the switch case control statement. Rememeber to use break after each case otherwise you will inadvertently cause every case to execute. 
