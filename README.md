@@ -38,9 +38,9 @@ Other important notes and examples on the data type topic:
 There are not many limitations when it comes to data types in C++. Moreover, there are nunces to consider like the ones we covered above. 
 
 ## Control Statements
-The boolean values in C++ are true and false, 0 and 1. 
+The boolean values in C++ are true and false (1 and 0). 
 
 Conditional statements consist of if/else if/ else. If you are familiar with Python, note that you cannot use elif in C++, you need to use else if. 
 C++ does utilize short-circuit logic (see plp code for examples). 
-Dangling else?
-You can also make use of the switch case control statement. Rememeber to use break after each case otherwise you will inadvertently cause every case to execute. 
+Dangling else exists in most porgramming languages including C++. Be careful to use the appropraite {} and indentation where required. Also, utilizing else if statments can help avoid the dangling else issue.
+You can also make use of the switch case control statement. Rememeber to use break after each case otherwise you will inadvertently cause every case to execute. Using continue to evaluate all the cases will not work in C++. 
