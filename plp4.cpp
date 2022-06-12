@@ -99,6 +99,7 @@ int main()
     return 0;
 }
 
+// function examples
 int sampleFunction(int num1, int num2)
 {
     return num1 * num2;
