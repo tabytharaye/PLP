@@ -44,3 +44,12 @@ Conditional statements consist of if/else if/ else. If you are familiar with Pyt
 C++ does utilize short-circuit logic (see plp code for examples). 
 Dangling else exists in most porgramming languages including C++. Be careful to use the appropraite {} and indentation where required. Also, utilizing else if statments can help avoid the dangling else issue.
 You can also make use of the switch case control statement. Rememeber to use break after each case otherwise you will inadvertently cause every case to execute. Using continue to evaluate all the cases will not work in C++. 
+
+## Loops and Functions
+- C++ includes many types of loops: while, do-while, for and for-each. Anything you can do with a while loop you can do with a for loop is true for C++. All four loops are demoed in code, and you can see the differences really lie within the syntax. 
+- Unlike Python, in C++ you need to declare a funtion in the beginning of your code outside of the main function in order for it to run. You need to include the type the function will return or void if no return. So for example, if you are writing a function to pass in two variables and return the sum, you will declare the function as: int functionName(int, int).
+Then within main, you will pass in the two int variables. Outside of main, you will write the function: int functionName(int num1, int num2). 
+- C++ does suppor recursive functions (see plp4 code for demo).
+- Functions in C++ can accept mulitple paraemeters as you see in the code example. But you cannot pass in different data types. 
+- Unforuntely, you cannot return multiple values at the same time in C++. In order to get around this, you can pass back an array, vector or tuple.
+- We are able to pass by both reference and value in C++! Passing by value is what we have seen thus far within the code. Passing by reference requires new syntax (&). See plp4 for an in-depth example.  
