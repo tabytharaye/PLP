@@ -49,7 +49,15 @@ You can also make use of the switch case control statement. Rememeber to use bre
 - C++ includes many types of loops: while, do-while, for and for-each. Anything you can do with a while loop you can do with a for loop is true for C++. All four loops are demoed in code, and you can see the differences really lie within the syntax. 
 - Unlike Python, in C++ you need to declare a funtion in the beginning of your code outside of the main function in order for it to run. You need to include the type the function will return or void if no return. So for example, if you are writing a function to pass in two variables and return the sum, you will declare the function as: int functionName(int, int).
 Then within main, you will pass in the two int variables. Outside of main, you will write the function: int functionName(int num1, int num2). 
-- C++ does suppor recursive functions (see plp4 code for demo).
+- C++ does support recursive functions (see plp4 code for demo).
 - Functions in C++ can accept mulitple paraemeters as you see in the code example. But you cannot pass in different data types. 
 - Unforuntely, you cannot return multiple values at the same time in C++. In order to get around this, you can pass back an array, vector or tuple.
 - We are able to pass by both reference and value in C++! Passing by value is what we have seen thus far within the code. Passing by reference requires new syntax (&). See plp4 for an in-depth example.  
+
+## Classes and Inheritance
+C++ is an object-oriented program, so yes it supports objects!
+If you're coming from a Python background, classes in C++ can be daunting. I will assume you have heard the typical examples given when learning classes for the first time (i.e. blueprints & houses, dog & types of dog, etc). All of those are great, but I am hungry...so we are going to use cookies.
+Say you are having a huge party. Hundreds of people are going to show up, and they all want cookies. BUT different types of cookies have been requested. What is the fastest way to make, say 200 cookies of various types? Make one base dough. If you make a plain cookie dough (flour, eggs, butter, sugar), you can then add extra ingredients per batch to make different types. For the chocolate batch, you can add cocoa and chocolate chips to the base dough. For the oatmeal batch, you can add oatmeal and raisins (ew) to the base dough. And so on and so forth until you are tired of cookies. The plain base dough is the class. And each type of cookie inherits from the base class by adding additional attributes. 
+- Naming conventions for classes in C++ typically start with an uppercase letter (eg Cookie). Other than that, you should follow the naming conventions already set forward for methods.
+- The most important thing to know about C++ classes are the use of header files. In the code base, there are three files for the Person class. This is the typical convention for C++ code. Header files consits of your constructor and attributes, the Person.cpp contains the methods, and the driver is where you make and object and can call methods on said object. 
+Classes can be difficult to grasp, but once you do you will understand how powerful they can be!
