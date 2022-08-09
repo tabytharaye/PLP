@@ -39,13 +39,17 @@ int main()
     Coordinates waypoints[ARRAY_XY];
     char again;
     double a2, b2, c2, powerX, powerY, totalDistance = 0, totalTime = 0;
-    
+
     cout << "### Flight Path Calculator ###\n";
+    cout<<endl;
     cout<<"To begin, choose an aircraft from the following list by entering the associated number...\n";
+    cout<<endl;
 
     for (int count = 0; count < SIZE; count++)
         cout<<"Number "<<(count+1)<<": "<<airplanes[count]<<endl;
-
+    cout<<endl;
+    cout<<"Enter aircraft number: ";
+    cin>>choice;
     // validate user input
     while (choice <= 0 || choice > 4){
         cout<<"Invalid input. Enter a correct number: ";
@@ -105,6 +109,10 @@ int main()
     }
     // pass data to function
     getTotal(totalDistance, totalTime);
+
+    // add total time and distance to log file
+    planeLog<<"Total distance: "<<totalDistance<<"meters"<<endl;
+    planeLog<<"Total time: "<<totalTime<<"seconds"<<endl;
 
     // close log file and end program
     planeLog.close();
